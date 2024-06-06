@@ -1,0 +1,139 @@
+.chose_us_container{
+  display: flex;
+  max-width: 100%;
+  height: 100vh;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.chose_us_container .title{
+  width: 100%;
+  height: 5rem;
+  text-align: center;
+  color: #333;
+}
+
+
+.chose_us_container .title h2{
+  color: #2664eb;
+  font-weight: 600;
+}
+.chose_us_container .title p{
+  color: #82814b;
+  font-weight: 600;
+}
+
+.card_circle_container{
+  width: 80vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  height: 60%;
+}
+
+.circle_display{
+  --n:3;   /* number of item */
+  --d:20s; /* duration */
+  width: 50px;
+  height: 50px;
+  margin: 40px auto;
+  background-color: #2664eb;
+  display:grid;
+  place-content: center;
+  align-self: center;
+  border-radius: 50%;
+  position: relative;
+}
+
+.rotateItem {
+  grid-area:1/1;
+  text-align: center;
+  border-radius: 50%;
+  animation: spin var(--d) linear infinite; 
+  transform:rotate(0) translate(100px) rotate(0);
+  height: 6rem;
+  width: 6rem;
+}
+
+.rotateItem img{
+  position: absolute;
+  width: 6rem;
+  left: 0;
+  top: 0;
+  transform: translate(-00%, -00%);
+}
+
+.highlight{
+  position: relative;
+}
+
+.highlight::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 25%;
+  display: block;
+  height: 2px;
+  background-color: #2664eb;
+}
+
+.info_container{
+  display: none;
+  background-color: #ffffff;
+  color: #2664eb;
+  width: 10rem;
+  padding: 0.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.card_appear{
+  grid-area: 1/2;
+  position: relative;
+  border-right: 1px solid #2664eb35;
+  overflow: hidden;
+  margin: 10px;
+  color: #2664eb;
+}
+
+.info{
+  position: absolute;
+  top: 50%;
+  left: 200%;
+  transform: translate(20%, -50%);
+  height: 50%;
+  width: 75%;
+  transition: 0.5s all ease-in-out;
+  border-radius: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+.show{
+  left: 0%;
+}
+
+.text_container{
+  padding: 2rem;
+}
+
+@keyframes spin {
+  100% {
+    transform:rotate(1turn) translate(100px) rotate(-1turn);
+  }
+}
+@keyframes spinTriangle {
+  100% {
+    transform:rotate(1turn);
+  }
+}
+
+.rotateItem:nth-child(1) {animation-delay:calc(-0*var(--d)/var(--n))}
+.rotateItem:nth-child(2) {animation-delay:calc(-1*var(--d)/var(--n))}
+.rotateItem:nth-child(3) {animation-delay:calc(-2*var(--d)/var(--n))}

@@ -1,0 +1,29 @@
+
+.cardservice_container{
+  max-width: 20rem;
+  max-height: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 50%;
+  padding: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  color: #2664eb;
+  border: 0.25rem;
+  transition: .3s all ease-in-out;
+  cursor: pointer;
+}
+
+.icon_service{
+  width: 6rem;
+}
+
+.cardservice_container p{
+  color: #444444;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.cardservice_container:hover{
+  scale: 1.02;
+}

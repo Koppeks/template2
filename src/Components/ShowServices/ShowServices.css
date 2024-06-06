@@ -1,0 +1,10 @@
+.showservices_container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 60%;
+  justify-content: center;
+  gap: 2rem;
+  margin: auto;
+  padding: 2rem;
+}

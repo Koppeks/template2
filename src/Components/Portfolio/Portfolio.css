@@ -1,0 +1,105 @@
+.portfolio_container{
+}
+.portfolio_container .title{
+  width: 100%;
+  text-align: center;
+}
+.portfolio_container .title h2{
+  font-weight: 600;
+  color: #2664eb;
+}
+.portfolio_container .title p{
+  color: #82814b;
+  font-weight: 600;
+}
+
+.portfolio_container .portfolio_list_example{
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: 2rem 5rem 5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.portfolio_list_example .card{
+  overflow: hidden;
+  width: 300px;
+  height: 200px;
+  border-radius: 1rem;
+}
+
+.portfolio_list_example .card .image{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.5s all ease-in-out;
+  cursor: pointer;
+}
+
+.portfolio_list_example .card .image:hover{
+  scale: 1.10;
+  opacity: 0.8;
+}
+
+.modal{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: calc(100% - 4rem);
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 3;
+}
+
+.modal.active{
+  display: flex;
+  align-items: center;
+}
+
+.modal .close{
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  scale: 0.65;
+  text-align: center;
+  font-size: 2rem;
+  padding: 0.5rem;
+  margin-right: 1rem;
+  right: 0;
+  transition: 0.5s all ease-in-out;
+}
+.modal .close path{
+  fill: #d7d7d7;
+}
+.modal .close:hover{
+  scale: 0.7;
+}
+
+.modal .modal_image{
+  width: 50%;
+  max-height: 70vh;
+  margin: auto;
+  border-radius: 2rem;
+  border: 2px solid #ffffff;
+}
+
+.modal .carousel_button{
+  background-color: transparent;
+  height: fit-content;
+  width: min-content;
+  margin: 5rem;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s all ease-in-out;
+}
+.modal .carousel_button path{
+  fill: #fff;
+  transition: 0.2s all ease-in-out;
+}
+.modal .carousel_button:hover path{
+  fill: #2664eb;
+}
