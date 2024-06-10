@@ -1,0 +1,31 @@
+
+.blog_container{
+  display: flex;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 8rem;
+}
+.blog_container .title{
+  width: 100%;
+  text-align: center;
+}
+.blog_container .title h2{
+  font-weight: 600;
+  color: #2664eb;
+}
+.title p{
+  color: #82814b;
+  font-weight: 600;
+}
+
+.blog_container .blog_list{
+  width: 50%;
+  display: flex;
+  padding-top: 2rem;
+  gap: 40px;
+  flex-wrap: wrap;
+}

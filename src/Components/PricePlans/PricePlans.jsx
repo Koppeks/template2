@@ -48,12 +48,11 @@ export default function PricePlans() {
     },
   ]
 
-
   return(
     <div className="price_plans_container">
       <div className="title_component">
-        <h2>Check our subscription plans</h2>
-        <p>Hire us and convert all your clients in to sells</p>
+        <h2>Subscription plans</h2>
+        <p>Hire us and change the way you sell your service</p>
       </div>
       <div className="cards_view">
       {

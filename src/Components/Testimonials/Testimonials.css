@@ -1,0 +1,21 @@
+.testimonials_container{
+  padding: 5rem 0;
+  width: 100vw;
+}
+.testimonials_container .title{
+  width: 100%;
+  text-align: center;
+}
+.title h2{
+  font-weight: 600;
+  color: #2664eb;
+}
+.title p{
+  color: #82814b;
+  font-weight: 600;
+}
+
+.testimonials{
+  width: 80vw;
+  margin: auto;
+}

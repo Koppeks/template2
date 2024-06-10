@@ -1,0 +1,102 @@
+.footer_container{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-height: 60vh;
+  background: no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.footer_parallax{
+  position: absolute;
+  inset: 0;
+  background-color: #000716ca;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.footer_content{
+  position: relative;
+  z-index: 2;
+  height: 60vh;
+  color: white;
+  width: 80%;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.footer_content h2{
+  font-size: 36px;
+  margin: 1rem 0;
+}
+
+/* Resume section styles */
+.resume {
+  max-width: 600px;
+  flex: 1 1 100%;
+  margin-bottom: 20px;
+}
+
+.resume h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.resume p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.social_media {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.social_media img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.social_media img:hover {
+  transform: scale(1.1);
+}
+.menus {
+  display: flex;
+  gap: 40px;
+  width: 50%;
+}
+
+.services_menu {
+  flex: 1;
+}
+
+.services_menu h4 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #fff;
+  display: inline-block;
+}
+
+.services_menu ul {
+  list-style: none;
+}
+
+.services_menu li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.services_menu li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

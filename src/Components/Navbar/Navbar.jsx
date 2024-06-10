@@ -17,7 +17,7 @@ export default function Navbar() {
 
   return(
     <nav className={`navbar_container ${isAtTop ?  "active_background_navbar" : ""} `}>
-      <h2>Logo</h2>
+      <h2 className="logo">Logo</h2>
       <ul className="menu">
         <li>Home</li>
         <li>Services</li>
@@ -27,7 +27,10 @@ export default function Navbar() {
         <li>Menu</li>
         <li>News</li>
       </ul>
-      <button>N</button>
+      <div className="account_buttons">
+        <button className="low_prior">Log in</button>
+        <button>Sign up</button>
+      </div>
     </nav>
   )
 }
