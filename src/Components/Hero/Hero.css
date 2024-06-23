@@ -1,7 +1,6 @@
 
 
 .hero_container{
-  width: 100vw;
   height: 100vh;
   overflow: hidden;
   background-color: #020318;
@@ -36,8 +35,8 @@
   cursor: pointer;
   padding: 1rem;
   transition: .3s all ease-in-out;
-  font-size: 18px;
 }
+
 .actions .contact:hover{
   scale: 1.05;
 }
@@ -47,4 +46,28 @@
   height: 100%;
   object-fit: cover;
   mask-image: linear-gradient(1turn, black, transparent);
+}
+
+@media screen and (max-width:1366px){
+  .focus{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 430px){
+  .focus{
+    width: 90%;
+    left: 5%;
+    padding-top: 5rem;
+    text-align: center;
+  }
+  .actions{
+    flex-direction: column;
+    align-items: stretch !important;
+    gap: 0rem !important;
+  }
+  
+  .actions .contact{
+    text-align: center;
+  }
 }

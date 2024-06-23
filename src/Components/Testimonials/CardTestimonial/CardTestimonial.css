@@ -7,11 +7,8 @@
   color: #333;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 0.5rem;
-  margin: 2rem;
-}
-.card_testimonial_container p{
-  color: #2664eb;
-  font-size: 50px;
+  margin: 3rem auto;
+
 }
 .card_testimonial_container h2{
   color: #2664eb;
@@ -53,4 +50,23 @@
   width: 80px;
   height: 80px;
   border-radius: 50%;
+}
+
+@media screen and (max-width: 430px){
+
+  .card_testimonial_container{
+    margin: 1rem auto;
+    min-height: 270px;
+  }
+
+  .card_testimonial_container .main_description{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0.3rem 1rem;
+  }
+  .card_testimonial_container blockquote{
+    margin: 0.5rem;
+  }
+
 }

@@ -11,6 +11,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+*{
+  box-sizing: border-box;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -23,16 +27,13 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
   min-height: 100vh;
   overflow-x: hidden !important;
 }
 
 button{
   cursor: pointer;
-  padding: 0.75rem 3rem;
+  padding: 0.5rem;
   border-radius: 1rem;
   background-color: #2664eb;
   transition: .3s all ease-in-out;
@@ -41,6 +42,10 @@ button{
 button:hover{
   background-color: rgb(12, 85, 243);
   border: 2px solid #c3c3c3;
+}
+
+.logo{
+  cursor: default;
 }
 
 h1 {
@@ -60,3 +65,11 @@ h1 {
     background-color: #f9f9f9;
   }
 }
+
+
+
+/* Mediaquery measures */
+@media screen and (max-width:1366px){}
+@media screen and (max-width:1024px){}
+@media screen and (max-width: 768px){}
+@media screen and (max-width: 430px){}

@@ -1,6 +1,7 @@
 .testimonials_container{
   padding: 5rem 0;
   width: 100vw;
+  margin: auto;
 }
 .testimonials_container .title{
   width: 100%;
@@ -18,4 +19,17 @@
 .testimonials{
   width: 80vw;
   margin: auto;
+}
+
+@media screen and (max-width:1366px){
+
+  .testimonials{
+    width: 100%;
+  }
+  .testimonials .slick-slider{
+    width: 100%;
+  }
+  .testimonials .slick-slider{
+    width: 100%;
+  }
 }

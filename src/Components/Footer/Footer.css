@@ -17,7 +17,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .footer_content{
@@ -38,7 +38,6 @@
   margin: 1rem 0;
 }
 
-/* Resume section styles */
 .resume {
   max-width: 600px;
   flex: 1 1 100%;
@@ -99,4 +98,74 @@
 .services_menu li:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+@media screen and (max-width:1366px){
+
+  .footer_container{
+    min-height: 80vh;
+  }
+
+  .resume {
+    max-width:350px;
+  }
+  .services_menu li {
+    margin-bottom: 2px;
+  }
+}
+
+@media screen and (max-width: 768px){
+
+  .footer_parallax{
+    justify-content: space-around;
+    padding: 0.5rem;
+  }
+  .resume {
+    max-width:250px;
+  }
+}
+
+
+@media screen and (max-width: 430px){
+  
+  .footer_container{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: auto;
+    height: auto;
+    background: no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .footer_parallax{
+    position: relative;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding: 0rem;
+  }
+
+  .resume {
+    max-width: 360px;
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+
+  .menus {
+    gap: 0;
+    width: 80%;
+    padding-left: 1rem;
+  }
+
+  .services_menu ul {
+    padding: 0;
+  }
+
+  .social_media {
+    justify-content: center;
+  }
 }

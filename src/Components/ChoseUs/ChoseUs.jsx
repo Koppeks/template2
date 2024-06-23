@@ -13,7 +13,7 @@ export default function ChoseUs() {
     "Our 24/7 support team ensures quick resolution of technical issues with minimal disruption, keeping your operations running smoothly."
   ]);
   const imageRef = useRef([]);
-  const [currentImage, setCurrentImage] = useState(1);
+  const [currentImage, setCurrentImage] = useState(0);
 
   useEffect(() => {
     const handleMouseOver = (e) => {
@@ -25,7 +25,6 @@ export default function ChoseUs() {
         img.addEventListener("mouseover", handleMouseOver);
       }
     });
-
     return () => {
       imageRef.current.forEach((img) => {
         if (img) {
@@ -34,6 +33,20 @@ export default function ChoseUs() {
       });
     };
   }, []);
+
+  useEffect(()=> {
+    
+    const cicleIcons = setTimeout(()=>{
+      if(currentImage >= 2){
+        setCurrentImage(0)
+      }else{
+        setCurrentImage(currentImage + 1)
+      }
+    },6000)
+
+    return () => window.clearTimeout(cicleIcons)
+
+  },[currentImage])
 
   return (
     <div className="chose_us_container">

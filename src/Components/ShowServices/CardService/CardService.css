@@ -1,17 +1,23 @@
 
 .cardservice_container{
-  max-width: 20rem;
-  max-height: 20rem;
+  height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex: 0 0 50%;
+  flex: 1 0 30%;
   padding: 1rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   color: #2664eb;
   border: 0.25rem;
   transition: .3s all ease-in-out;
   cursor: pointer;
+}
+
+.top_card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 }
 
 .icon_service{
@@ -26,4 +32,35 @@
 
 .cardservice_container:hover{
   scale: 1.02;
+}
+
+
+
+@media screen and (max-width: 768px){
+  .cardservice_container{
+    flex: 1 0 30%;
+    padding: 0.5rem;
+  }
+  .icon_service{
+    width: 4rem;
+  }
+}
+
+@media screen and (max-width: 430px){
+  .cardservice_container{
+    height: auto;
+    flex: 1 0 100%;
+    padding: 0.5rem;
+  }
+
+  .top_card .icon_service{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-150%, -50%);
+  }
+
+  .icon_service{
+    width: 3rem;
+  }
 }

@@ -1,0 +1,53 @@
+.input_component{
+  position:relative;
+  width: 100%;
+  height: auto;
+  margin-bottom: 2.5rem;
+}
+
+.error_message{
+  color: red;
+  font-size: 12px;
+  position: absolute;
+}
+
+.input_component input{
+  background-color: #fff;
+  height: 1.5rem;
+  width: 100%;
+  color: #222;
+  border: 2px solid #c1c1c1;
+  outline: none;
+  border-radius: 2px;
+  margin: auto;
+}
+
+.input_component input:focus {
+  border: 2px solid #2664eb;
+}
+.input_component input:not(:placeholder-shown){
+  border: 2px solid #2664eb;
+}
+
+.input_component input:focus + label {
+  top: 0;
+  transform: translate(0%, -100%);
+  font-size: 12px;
+}
+.input_component input:not(:placeholder-shown) + label{
+  top: 0;
+  transform: translate(0%, -100%);
+  font-size: 12px;
+}
+
+.input_component label{
+  position: absolute;
+  color: #222;
+  left: 0%;
+  top: 0%;
+  margin-left: 0.5rem;
+  transform: translate(0%, 00%);
+  transition: 0.2s all ease-in-out;
+  pointer-events: none;
+  height: 1rem;
+}

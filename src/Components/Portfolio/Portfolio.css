@@ -1,4 +1,6 @@
 .portfolio_container{
+  width: 70%;
+  margin: auto;
 }
 .portfolio_container .title{
   width: 100%;
@@ -22,6 +24,7 @@
   align-items: center;
   gap: 2rem;
 }
+
 .portfolio_list_example .card{
   overflow: hidden;
   width: 300px;
@@ -102,4 +105,111 @@
 }
 .modal .carousel_button:hover path{
   fill: #2664eb;
+}
+
+
+
+@media screen and (max-width:1366px){
+  .portfolio_container{
+    width:100%;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .portfolio_container{
+    max-width: 100vw;
+    margin: 0;
+  }
+
+  .portfolio_container .portfolio_list_example{
+    padding: 2rem 0;
+  }
+
+  .modal .modal_image{
+    width:60%;
+    max-height: 70vh;
+    margin: auto;
+    border-radius: 2rem;
+    border: 2px solid #ffffff;
+  }
+
+  .modal .carousel_button{
+    background-color: transparent;
+    height: fit-content;
+    width: min-content;
+    margin: 0rem;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s all ease-in-out;
+    padding-bottom: 0;
+  }
+}
+
+
+@media screen and (max-width: 430px){
+
+  .portfolio_container{
+    max-width: 100vw;
+    margin: 0;
+  }
+
+  .portfolio_list_example .card{
+    overflow: hidden;
+    width: 300px;
+    height: 200px;
+    border-radius: 1rem;
+  }
+
+  .portfolio_container .portfolio_list_example{
+    display: flex;
+    flex-wrap: nowrap;
+    margin: auto;
+    flex-direction: column;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .modal{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 4rem);
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 3;
+  }
+
+  .modal.active{
+    align-items: center;
+    justify-content: space-between;
+    align-content: flex-end;
+    flex-wrap: wrap;
+  }
+
+  .modal .close{
+    cursor: pointer;
+    position: absolute;
+    top: 4%;
+    scale: 0.8;
+    text-align: center;
+    font-size: 2rem;
+    padding: 0.5rem;
+    margin-right: 1rem;
+    right: 0;
+    transition: 0.5s all ease-in-out;
+  }
+
+  .modal .modal_image{
+    width: 100%;
+    max-height: 70vh;
+    margin: auto;
+    border-radius: 2rem;
+    border: 2px solid #ffffff;
+    position: absolute;
+  }
 }

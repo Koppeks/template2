@@ -4,9 +4,10 @@
 
 .cards_view{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
-  margin: 3rem 8rem;
+  margin: 3rem auto;
+  width: 80%;
 }
 
 .title_component{
@@ -20,4 +21,14 @@
 .title_component p{
   color: #82814b;
   font-weight: 600;
+}
+
+@media screen and (max-width: 768px){
+  .price_plans_container{
+    max-width: 100vw;
+  }
+  .cards_view{
+    flex-direction: column-reverse;
+    gap: 3rem;
+  }
 }

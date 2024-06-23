@@ -1,3 +1,4 @@
+import { Element } from "react-scroll";
 import "./Blog.css"
 import BlogPostCard from "./BlogPostCard/BlogPostCard";
 
@@ -49,6 +50,7 @@ export default function Blog() {
 
   return(
     <div className="blog_container">
+      <Element name="Blog"></Element>
       <div className="title">
         <h2>Blog</h2>
         <p>Checkout out lastest entries and stay up to date</p>

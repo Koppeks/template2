@@ -1,27 +1,47 @@
 .contact_us_container{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
   height: auto;
-  width: 60%;
-  margin: 5rem auto;
+  width: 100%;
+  margin: 10rem auto;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.contact_us_container video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+.contact_us_container .video_opa{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.72);
 }
 
 .contact_us_container .contact_form{
-  height: 400px;
+  z-index: 2;
+  height: 100%;
+  width: 25%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 3rem;
 }
+
 .contact_us_container .side_form_info{
   height: 400px;
+  width: 25%;
   display: flex;
-  padding: 0 2rem;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-evenly;
   text-align: left;
-  color: #222;
+  color: #ffffff;
+  z-index: 2;
 }
 
 .side_form_info section h3{
@@ -33,18 +53,18 @@
   text-align: center;
   padding: 2rem;
   font-weight: 600;
-  color: #2664eb;
+  color: white;
 }
 
 .contact_form .input_text{
-  width: 500px;
+  width: 100%;
   position: relative;
   margin: 1rem 0;
 }
 
 .contact_form .top_form{
   display: flex;
-  width: 50%;
+  width: 100%;
   gap: 8%;
   justify-content: space-between;
 }
@@ -77,11 +97,13 @@
   top: 0;
   transform: translate(0%, -100%);
   margin-left: 0.5rem;
+  color: white;
 }
 .input_text .input:not(:placeholder-shown) + label{
   top: 0;
   transform: translate(0%, -100%);
   margin-left: 0.5rem;
+  color: white;
 }
 
 .input_text label{
@@ -93,4 +115,44 @@
   transform: translate(0%, -50%);
   transition: 0.2s all ease-in-out;
   pointer-events: none;
+}
+
+
+
+@media screen and (max-width:1366px){
+
+  .contact_us_container{
+    margin: 4rem auto;
+  }
+
+  .contact_us_container .contact_form{
+    width: 40%;
+  }
+
+}
+
+@media screen and (max-width: 430px){
+  .contact_us_container{
+    display: flex;
+    height: auto;
+    width: 100%;
+    margin: 2rem auto;
+    flex-direction: column-reverse;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact_us_container .contact_form{
+    width: 90%;
+  }
+
+  .contact_form h2{
+    padding: 0.5rem;
+  }
+  .contact_us_container .side_form_info{
+    height: auto;
+    width: 80%;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
 }

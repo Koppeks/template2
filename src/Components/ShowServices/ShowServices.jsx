@@ -1,3 +1,4 @@
+import { Element } from "react-scroll";
 import CardService from "./CardService/CardService";
 
 import "./ShowServices.css"
@@ -29,6 +30,11 @@ export default function ShowServices(){
 
   return(
     <div className="showservices_container">
+      <Element name="Services"></Element>
+      <div className="title">
+        <h2>What we offer</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et nihil labore, pariatur necessitatibus porro itaque nostrum voluptatibus velit asperiores.</p>
+      </div>
       {cards.map((card, index) => (
         <CardService key={index} img={card.img} text={card.text} title={card.title} />
       ))}

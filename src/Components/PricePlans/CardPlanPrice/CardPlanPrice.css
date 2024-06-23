@@ -1,7 +1,7 @@
 
 .card_plan_price_container{
   width: 300px;
-  min-height: 500px;
+  min-height: 600px;
   height: auto;
   display: flex;
   flex-wrap: wrap;
@@ -13,9 +13,11 @@
   scale: 0.85;
   transition: 0.2s all ease-in-out;
 }
+
 .card_plan_price_container:hover{
   scale: 0.9;
 }
+
 .card_plan_price_container h2{
   background-color: #2664eb;
   width: 100%;
@@ -45,6 +47,7 @@
 
 .list_of_items{
   width: 100%;
+  overflow: auto;
 }
 
 .list_of_items .item{
@@ -54,15 +57,62 @@
 .card_price_button{
   position: absolute;
   bottom: 0;
-  margin: 1rem;
-  width: 140px;
-  height: 2rem;
+  margin: 0.5rem;
+  width: 160px;
+  height: auto;
   background-color: #2664eb;
   border: none;
   outline: none;
   transition: 0.3s all ease-in-out;
   border-radius: .5rem;
+  border: 2px solid #c3c3c3;
+  font-weight: 600;
 }
 .card_price_button:hover{
-  scale: 1.05;
+  background-color: #ffffff;
+  border: 2px solid #c3c3c3;
+  color: #2664eb;
+}
+
+@media screen and (max-width: 768px){
+  .card_plan_price_container{
+    width: 90%;
+    min-height: auto;
+    padding-bottom: 3rem;
+    height: auto;
+    border-radius: 1rem;
+    scale: 1;
+  }
+
+  .card_plan_price_container h2{
+    background-color: #2664eb;
+    padding: 0.2rem 0;
+    margin: 0;
+    color: rgb(221, 221, 221);
+  }
+  .card_plan_price_container:hover{
+    scale: 1;
+  }
+
+  .stand_out h3{
+    color: #2664eb;
+    padding: 0.6rem;
+    margin: 0;
+  }
+
+  .stand_out h2{
+    font-size: 20px;
+    color: white;
+  }
+  h2{
+    font-size: 20px;
+  }
+
+  .stand_out{
+    order: 1;
+  }
+
+  .list_of_items .item{
+    padding: 0.1rem 0.5rem;
+  }
 }

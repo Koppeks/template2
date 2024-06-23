@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./Portfolio.css";
+import { Element } from "react-scroll";
 
 export default function Portfolio() {
 
@@ -42,6 +43,7 @@ export default function Portfolio() {
 
   return (
     <div className="portfolio_container">
+      <Element name="Portfolio"></Element>
       <div className="title">
         <h2>Our portfolio</h2>
         <p>subtitle of less importance</p>

@@ -1,10 +1,26 @@
 .showservices_container{
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  max-width: 60%;
-  justify-content: center;
+  width: 80%;
   gap: 2rem;
   margin: auto;
-  padding: 2rem;
+  padding-top: 2rem;
+}
+
+.showservices_container .title{
+  text-align: center;
+}
+.showservices_container .title p{
+  width: 60%;
+  margin: auto;
+}
+
+
+@media screen and (max-width: 768px){
+  .showservices_container{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

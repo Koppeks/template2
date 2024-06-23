@@ -1,0 +1,26 @@
+.go_up_arrow{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  scale: 0.4;
+  cursor: pointer;
+}
+
+.go_up_arrow:hover path{
+  animation: up_down 4s infinite;
+}
+
+@keyframes up_down {
+  0%{
+    transform: translateY(0px);
+  }
+  25%{
+    transform: translateY(-10px);
+  }
+  50%{
+    transform: translateY(0px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}

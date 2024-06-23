@@ -8,6 +8,7 @@
   background-size: cover;
   background-attachment: fixed;
   border-radius: 2rem;
+  display: flex;
 }
 
 .opacity_parallax{
@@ -15,23 +16,51 @@
   inset: 0;
   background-color: #000716b5;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
 .parallax_content{
   position: relative;
   z-index: 2;
-  height: 60vh;
+  height: auto;
   color: white;
   width: 80%;
   display: flex;
   margin: auto;
   justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+
 }
 
 .parallax_content h2{
   font-size: 36px;
   margin: 1rem 0;
+}
+
+
+@media screen and (max-width:1366px){
+
+  .extra_info_container{
+    width: 100%;
+    border-radius: 0rem;
+    min-height: 80vh;
+    margin: 2rem auto;
+  }
+  
+}
+
+@media screen and (max-width: 430px){
+  .extra_info_container{
+    width: 100%;
+    min-height: 70vh;
+    margin: 1rem auto;
+    border-radius: 0rem;
+  }
+
+  .parallax_content{
+    width: 90%;
+    flex-direction: column;
+    gap: 1rem;
+  }
 }

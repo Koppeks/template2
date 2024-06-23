@@ -10,8 +10,10 @@ CardService.propTypes = {
 export default function CardService({img, title,text}) {
   return(
     <div className="cardservice_container">
-      <img src={img} alt={`serviceIcon${title}`} className="icon_service"/>
-      <h3>{title}</h3>
+      <div className="top_card">
+        <img src={img} alt={`serviceIcon${title}`} className="icon_service"/>
+        <h3>{title}</h3>
+      </div>
       <p>{text}</p>
     </div>
   )

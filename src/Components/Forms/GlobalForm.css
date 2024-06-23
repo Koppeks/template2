@@ -1,0 +1,17 @@
+.global_form_component{
+  height: auto;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.global_form button{
+  width: 60%;
+  margin: auto;
+}

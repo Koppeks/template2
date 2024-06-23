@@ -1,3 +1,4 @@
+import { Element } from "react-scroll"
 import CardPlanPrice from "./CardPlanPrice/CardPlanPrice"
 import "./PricePlans.css"
 
@@ -50,6 +51,7 @@ export default function PricePlans() {
 
   return(
     <div className="price_plans_container">
+      <Element name="Price&Plans"></Element>
       <div className="title_component">
         <h2>Subscription plans</h2>
         <p>Hire us and change the way you sell your service</p>

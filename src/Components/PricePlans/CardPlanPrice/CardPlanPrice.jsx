@@ -19,13 +19,13 @@ export default function CardPlanPrice({infoCard}) {
         :
         <h2>${infoCard.price}/month</h2>
     }
-      <div className="list_of_items">
+      <ul className="list_of_items">
         {
           infoCard.descriptions.map((item, index) => (
-            <p key={index} className="item">{item}</p>
+            <li key={index} className="item">{item}</li>
           ))
         }
-      </div>
+      </ul>
       <button className="card_price_button">Buy now</button>
     </div>
   )

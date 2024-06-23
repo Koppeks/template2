@@ -1,0 +1,9 @@
+
+.canva_background{ 
+  overflow: hidden;
+  width:100dvw;
+  height:100dvh;
+  background-color:transparent;
+  position: fixed;
+  z-index: -1;
+}

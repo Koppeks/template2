@@ -1,0 +1,29 @@
+.button_redirect{
+  color: #e8e8e8;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  transition: 0.3s all ease-in-out;
+}
+.button_redirect:hover{
+  color: #ffffff;
+}
+
+.low{
+  padding: 0.1rem 0.3rem;
+  margin: 0.2rem;
+}
+.low:hover{
+  background-color: transparent;
+}
+
+.medium{
+  padding: 0.25rem 0.5rem;
+}
+
+.high{
+  padding: 0.5rem 1.5rem;
+  background-color: #2664eb;
+}
+.high{
+  background-color: #155dfa;
+}
