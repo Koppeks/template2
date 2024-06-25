@@ -46,7 +46,7 @@ export default function Navbar() {
       <div className={`display_menu_hamburguer ${activeBurguer && "active_menu"}`} ref={hamburguerRef}>
         <ul className="menu">
           <ScrollLink
-            onClick(()=> setActiveBurguer(false))
+            onClick={(()=> setActiveBurguer(false))}
             to="Home"
             spy={true}
             smooth={true}
@@ -55,7 +55,7 @@ export default function Navbar() {
             className="link"
           >Home</ScrollLink>
           <ScrollLink
-            onClick(()=> setActiveBurguer(false))
+            onClick={(()=> setActiveBurguer(false))}
             to="Services"
             spy={true}
             smooth={true}
@@ -64,7 +64,7 @@ export default function Navbar() {
             className="link"
           >Services</ScrollLink>
           <ScrollLink
-            onClick(()=> setActiveBurguer(false))
+            onClick={(()=> setActiveBurguer(false))}
             to="Portfolio"
             spy={true}
             smooth={true}
@@ -73,7 +73,7 @@ export default function Navbar() {
             className="link"
           >Portfolio</ScrollLink>
           <ScrollLink
-            onClick(()=> setActiveBurguer(false))
+            onClick={(()=> setActiveBurguer(false))}
             to="Price&Plans"
             spy={true}
             smooth={true}
@@ -82,7 +82,7 @@ export default function Navbar() {
             className="link"
           >Pricing</ScrollLink>
           <ScrollLink
-            onClick(()=> setActiveBurguer(false))
+            onClick={(()=> setActiveBurguer(false))}
             to="Blog"
             spy={true}
             smooth={true}
